@@ -16,9 +16,9 @@ window.onload=function(){
 				//场景初始化
 				'init':function(){
 					setTimeout(function(){
-						Game.box.style.background='url(images/1.jpg)';
+						Game.box.style.background='url(images/10.png)';
 						var oTitle = Game.ctE('h3');
-							oTitle.innerHTML='Js飞机大战v1.0-Betrs版';		
+							oTitle.innerHTML='Js飞机大战v1.0-Betrs版';
 						var oDiv = Game.ctE('div');
 							oDiv.innerHTML = '<p class="ac">简单</p><p class="ac">一般</p><p class="ac">困难</p>';
 						Game.box.appendChild(oTitle);
@@ -62,7 +62,7 @@ window.onload=function(){
 						t=150;
 						c=15;
 						d=400;
-					}else if(this.index==2){						
+					}else if(this.index==2){
 						bg(5);
 						t=200;
 						c=20;
@@ -81,7 +81,7 @@ window.onload=function(){
 					var bL = Game.box.offsetLeft + Game.oPlane.clientWidth/2 + (Game.box.offsetWidth-Game.getstyle(Game.box,'width'))/2;
 					var top = ev.pageY - bT;
 					var left = ev.pageX - bL;
-					Game.oPlane.style.cssText='top:'+top+'px;left:'+left+'px;';	
+					Game.oPlane.style.cssText='top:'+top+'px;left:'+left+'px;';
 
 					var topMax = Game.getstyle(Game.box,'height')-Game.oPlane.clientHeight/2;
 					var leftMin = -Game.oPlane.clientWidth/2;
@@ -100,9 +100,9 @@ window.onload=function(){
 						}else if(left>leftMax){
 							left = leftMax;
 						};
-						Game.oPlane.style.cssText='top:'+top+'px;left:'+left+'px;';	
+						Game.oPlane.style.cssText='top:'+top+'px;left:'+left+'px;';
 					};
-					
+
 					/*子弹生成速度 */
 					Game.bTimer=setInterval(function(){Game.bullet(top,left,c);},t);
 
@@ -170,7 +170,7 @@ window.onload=function(){
 									Game.num+=10;
 									Game.oScore.innerHTML=Game.num+'分';
 									Game.fenshu=Game.oScore.innerHTML;
-								};	
+								};
 							};
 							if(Game.pz(oEnemy,Game.oPlane)){
 								oEnemy.src='images/boom.png';
@@ -259,7 +259,7 @@ window.onload=function(){
 								arr.push(aElements[i]);
 								break;
 								};
-							};	
+							};
 						};
 					return arr;
 				},
