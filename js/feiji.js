@@ -18,9 +18,9 @@ window.onload=function(){
 					setTimeout(function(){
 						Game.box.style.background='url(images/10.png)';
 						var oTitle = Game.ctE('h3');
-							oTitle.innerHTML='Js飞机大战v1.0-Betrs版';
+							oTitle.innerHTML='安安静静打飞机';
 						var oDiv = Game.ctE('div');
-							oDiv.innerHTML = '<p class="ac">简单</p><p class="ac">一般</p><p class="ac">困难</p>';
+							oDiv.innerHTML = '<p class="ac">天堂模式</p><p class="ac">人间模式</p><p class="ac">地狱模式</p>';
 						Game.box.appendChild(oTitle);
 						Game.box.appendChild(oDiv);
 						Game.img();
